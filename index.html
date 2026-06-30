@@ -1092,8 +1092,8 @@
       transition: all .3s ease;
       margin-top: 14px;
       text-decoration: none;
-      box-shadow:none
-      /*box-shadow: 0 4px 20px rgba(37, 211, 102, .35);*/
+      box-shadow: none
+        /*box-shadow: 0 4px 20px rgba(37, 211, 102, .35);*/
     }
 
     /*.btn-wa-line:hover {
@@ -1102,10 +1102,10 @@
       box-shadow: 0 8px 28px rgba(37, 211, 102, .5)
     }*/
     .btn-wa-line:hover {
-  background: #1da851;
-  transform: translateY(-3px);
-  box-shadow: none;
-}
+      background: #1da851;
+      transform: translateY(-3px);
+      box-shadow: none;
+    }
 
     @media(max-width:480px) {
       .btn-wa-line {
@@ -1941,33 +1941,35 @@
       }
 
     }
+
     /*adding back button for vedio*/
-   .video-back{
-    margin-top:16px;
-    text-align:center;
-    color:#C9A84C;
-    font-family:'Cinzel', serif;
-    font-size:13px;
-    letter-spacing:1px;
-    cursor:pointer;
-    opacity:0.85;
-    transition:all 0.2s ease;
-    user-select:none;
-}
+    .video-back {
+      margin-top: 16px;
+      text-align: center;
+      color: #C9A84C;
+      font-family: 'Cinzel', serif;
+      font-size: 13px;
+      letter-spacing: 1px;
+      cursor: pointer;
+      opacity: 0.85;
+      transition: all 0.2s ease;
+      user-select: none;
+    }
 
-.video-back:hover{
-    opacity:1;
-    transform:translateY(-1px);
-}
-/* adding hover to the guru cards*/
-.guru-card{
-  cursor:pointer;
-  transition: transform 0.35s ease;
-}
+    .video-back:hover {
+      opacity: 1;
+      transform: translateY(-1px);
+    }
 
-.guru-card:hover{
-  transform: translateY(-10px) scale(1.5);
-}
+    /* adding hover to the guru cards*/
+    .guru-card {
+      cursor: pointer;
+      transition: transform 0.35s ease;
+    }
+
+    .guru-card:hover {
+      transform: translateY(-10px) scale(1.5);
+    }
   </style>
 </head>
 
@@ -2184,8 +2186,7 @@
         <div class="video-item reveal" onclick="openVModal('founder')">
           <div class="video-thumb">
             <!-- ✏️ REPLACE: Add your factory/process thumbnail image -->
-            <img src="assets/Video1thumbnail.png" alt="Founder Story"
-              loading="lazy">
+            <img src="assets/Video1thumbnail.png" alt="Founder Story" loading="lazy">
             <div class="video-thumb-ov"></div>
             <div class="play-wrap">
               <div class="play-btn">▶</div>
@@ -2195,7 +2196,8 @@
           <div class="video-info">
             <span class="vid-label">OUR STORY · FOUNDER MESSAGE</span>
             <h3>The Story Behind Shivdhenu</h3>
-            <p>Hear the inspiring story behind Shivdhenu. Our founder shares the vision, purpose, and values that guide every product we create.</p>
+            <p>Hear the inspiring story behind Shivdhenu. Our founder shares the vision, purpose, and values that guide
+              every product we create.</p>
             <div class="vid-cta-row">
               <button class="vid-watch-btn">▶ Watch Video</button>
 
@@ -2258,7 +2260,8 @@
       <!-- Big button row -->
       <div class="enter-btns">
         <!-- ✏️ CHANGE: Replace href with your actual website URL -->
-        <a href="../index.html" class="btn-enter" id="enter-website-btn">
+        <a href="https://mainshivdhenu.netlify.app" target="_blank" rel="noopener" class="btn-enter"
+          id="enter-website-btn">
           <span style="display:inline-flex;width:18px;height:18px;margin-right:6px;vertical-align:middle">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <circle cx="12" cy="12" r="10" />
@@ -2317,7 +2320,7 @@
           <p>Pure natural products rooted in ancient Vedic wisdom. No preservatives. No shortcuts. Just nature's best,
             delivered to your home.</p>
           <!-- ✏️ Change phone number below (digits only) -->
-         <!--<a href="https://wa.me/9380553589" target="_blank" class="ft-wa" style="margin-top:16px"><span
+          <!--<a href="https://wa.me/9380553589" target="_blank" class="ft-wa" style="margin-top:16px"><span
               style="display:inline-flex;width:16px;height:16px;margin-right:6px;vertical-align:middle">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M21 12a8 8 0 0 1-8 8H5l2-4a8 8 0 1 1 14-4Z" />
@@ -2351,19 +2354,19 @@
   </footer>
 
   <!-- VIDEO MODAL -->
-<div class="vmodal" id="vmodal" onclick="closeVModal(event)">
+  <div class="vmodal" id="vmodal" onclick="closeVModal(event)">
 
-  <div class="vmodal-box">
+    <div class="vmodal-box">
 
-    <button class="vmodal-close" onclick="closeVModal()">✕</button>
+      <button class="vmodal-close" onclick="closeVModal()">✕</button>
 
-    <div class="vmodal-body" id="vmodal-body">
+      <div class="vmodal-body" id="vmodal-body">
+
+      </div>
 
     </div>
 
   </div>
-
-</div>
   <!-- ══ SCRIPTS ══════════════════════════════════ -->
   <script>
     /* ── PHONE NUMBER — change once here, updates everywhere ── */
@@ -2414,24 +2417,24 @@
     const vTitles = {
       founder: { title: 'Why I Started Shivdhenu', desc: 'Our founder speaks directly — the story, the mission and the vision for pure food in every Indian home.' },
       goushala: { title: 'Life at Our Gou Shala', desc: 'Our indigenous Gir cows, how we care for them and why Gou Seva is the foundation of everything we do.' },
-      
+
     };
 
- function openVModal(type) {
+    function openVModal(type) {
 
-  const body = document.getElementById("vmodal-body");
-  console.log(body);
+      const body = document.getElementById("vmodal-body");
+      console.log(body);
 
-  if (type === "founder") {
+      if (type === "founder") {
 
-    body.innerHTML = `
+        body.innerHTML = `
       <video
         controls
         autoplay
         playsinline
         style="width:100%;border-radius:14px;background:#000;max-height:75vh;">
 
-        <source src="assets/videos/SHIVDHENU.mp4" type="video/mp4">
+       <source src="assets/Shivdhenuv.mp4" type="video/mp4">
 
         Your browser does not support HTML5 video.
 
@@ -2442,11 +2445,11 @@
       </div>
     `;
 
-  } else {
+      } else {
 
-    const data = vTitles[type] || {};
+        const data = vTitles[type] || {};
 
-    body.innerHTML = `
+        body.innerHTML = `
       <span class="big-ico">🎬</span>
 
       <h3>${data.title || "Video"} — Coming Soon</h3>
@@ -2464,33 +2467,33 @@
       </div>
     `;
 
-  }
+      }
 
-  document.getElementById("vmodal").classList.add("open");
+      document.getElementById("vmodal").classList.add("open");
 
-  document.body.style.overflow = "hidden";
+      document.body.style.overflow = "hidden";
 
-}
+    }
 
-    function closeVModal(e){
+    function closeVModal(e) {
 
-  if(e && e.target !== document.getElementById("vmodal")) return;
+      if (e && e.target !== document.getElementById("vmodal")) return;
 
-  const video = document.querySelector("#vmodal video");
+      const video = document.querySelector("#vmodal video");
 
-  if(video){
+      if (video) {
 
-      video.pause();
+        video.pause();
 
-      video.currentTime = 0;
+        video.currentTime = 0;
 
-  }
+      }
 
-  document.getElementById("vmodal").classList.remove("open");
+      document.getElementById("vmodal").classList.remove("open");
 
-  document.body.style.overflow = "";
+      document.body.style.overflow = "";
 
-}
+    }
 
     document.addEventListener('keydown', e => {
       if (e.key === 'Escape') closeVModal({ target: document.getElementById('vmodal') });
